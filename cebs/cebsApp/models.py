@@ -8,15 +8,6 @@ class UserReg(models.Model):
 
     class Meta:
          db_table="usersignup"
-    # def __str__(self):
-    #     return self.uname
 
-    
-
-# class Tag(models.Model):
-# 	uname = models.CharField(max_length=200, null=True)
-
-# 	def __str__(self):
-# 		return self.uname
 
     
