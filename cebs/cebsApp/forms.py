@@ -13,7 +13,11 @@ from django import forms
 # 		model = Order
 # 		fields = '__all__'
 
-class CreateUserForm(UserCreationForm):
+# class CreateUserForm(UserCreationForm):
+# 	class Meta:
+# 		model = User
+# 		fields = ['username','email','password1','password2']
+class CreateUserForm(models.ModelForm):
 	class Meta:
-		model = User
+		model = UserReg
 		fields = ['username','email','password1','password2']
