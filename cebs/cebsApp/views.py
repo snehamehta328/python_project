@@ -61,8 +61,10 @@ def signup(request):
                     x.uname=request.POST.get('username')
                     x.uemail=request.POST.get('email')
                     x.pwd=request.POST.get('password1')
+                    # x.contactNum=request.POST.get('contactNum')
                     x.save()
                     user=form.cleaned_data.get('username')
+                    mail=form.cleaned_data.get('email')
                     messages.success(request,'Account was created for '+user)
                     return redirect('login/')
         context={'form':form}
